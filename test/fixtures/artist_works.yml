@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  work_type: MyString
+  work_title: MyString
+  year: 2023-07-18
+  ownership_status: MyString
+  description: MyText
+
+two:
+  work_type: MyString
+  work_title: MyString
+  year: 2023-07-18
+  ownership_status: MyString
+  description: MyText
