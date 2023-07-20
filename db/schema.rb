@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_17_094908) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_19_160704) do
+  create_table "artist_works", force: :cascade do |t|
+    t.string "work_type"
+    t.string "work_title"
+    t.date "year"
+    t.string "ownership_status"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "middle_name"
