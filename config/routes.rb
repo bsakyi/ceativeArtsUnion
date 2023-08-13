@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'admin/index'
+  resources :admin, only: [:index, :create, :update]
+  devise_for :users
   resources :artist_works
   namespace :api do 
     namespace :v1 do  
